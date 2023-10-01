@@ -1,0 +1,230 @@
+body{
+    font-family: Arial;
+    color: black;
+    background-color: silver;
+}
+
+.java:hover{
+    content: url(Dames.png); 
+    display: block;
+    left: 200px; 
+    top: 300px; 
+}
+.skills img:hover{
+
+        transform: scale(1.5);
+
+}
+.projava{
+    border-radius: 30px;
+    background-color: #8dc6ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+.projava img{
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar a{
+    display: inline-block;
+     vertical-align: middle;
+     color: #f2f2f2;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    background-color: #8dc6ff;
+    border-radius: 30px;
+}
+
+.profil{
+    text-align: center; 
+}
+
+footer{
+    color: aqua;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+}
+.links{
+    margin: auto;
+}
+
+.skills img{
+    width: 100px;
+    margin: 20px;
+}
+.presentation{
+    background-color: #2d4059;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #8dc6ff;
+}
+.skills{
+    background-color: #2d4059;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+    .profil img{
+        width: 50%;
+        border-radius: 50%;
+        margin:20px;
+        max-width: 200px; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+ 
+    .smallbar{
+        display: flex;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+  
+    .navbar ul{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navbar ul{
+        list-style-type:none;
+    }
+    header{
+        overflow:hidden;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #22313f;
+        border-radius: 30px;
+        color: #8dc6ff;
+        text-align: center;
+    }
+    
+    
+
+    .profil{
+        animation: hidde 1.2s ease 0s 1;
+    }
+    header{
+        animation: slide-top 1s ease 0s 1;
+    }
+    
+      @keyframes slide-left {
+        0% {
+            -webkit-transform: translateX(100px);
+            transform: translateX(1000px);
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            }
+        }
+    
+    @keyframes hidde {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+   
+    footer img{
+        width: 50px;
+        
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .profil img{
+        width: 20%;
+        border-radius: 50%;
+        margin:20px;
+        max-width: 200px; 
+        margin-right: 20px; 
+    }
+
+    header{
+        overflow:hidden;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #22313f;
+        border-radius: 30px;
+        color: #8dc6ff;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navbar ul{
+        list-style-type:none;
+    }
+    
+    
+    .profil{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    
+    .align{
+        margin-top: 20px;
+        margin: auto;
+    }
+    .profil{
+        animation: hidde 2.5s ease 0s 1;
+    }
+    header{
+        animation: slide-top 1s ease 0s 1;
+    }
+    
+    
+    
+    @keyframes hidde {
+        0%{
+            opacity: 0;
+        }
+        90%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slide-top {
+        0% {
+            
+            -webkit-transform: translateY(-100px);
+            transform: translateY(-200px);
+        }
+        100% {
+            
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            }
+        }
+    
+    
+    .skills img{
+        width: 100px;
+    }
+    
+    
+    footer img{
+        width: 50px;
+        
+    }
+    footer{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
